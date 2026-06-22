@@ -70,6 +70,24 @@ variable "listed_price" {
   default     = null
 }
 
+variable "sold" {
+  type        = bool
+  description = "Whether the vehicle has been sold."
+  default     = null
+}
+
+variable "sold_date" {
+  type        = string
+  description = "Date the vehicle was sold (ISO 8601)."
+  default     = null
+}
+
+variable "sold_price" {
+  type        = number
+  description = "Price the vehicle sold for."
+  default     = null
+}
+
 # --- Child resources --------------------------------------------------------
 
 variable "create_standard_albums" {

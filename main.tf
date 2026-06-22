@@ -12,6 +12,9 @@ resource "dashtag_vehicle" "this" {
   description  = var.description
   for_sale     = var.for_sale
   listed_price = var.listed_price
+  sold         = var.sold
+  sold_date    = var.sold_date
+  sold_price   = var.sold_price
 }
 
 locals {

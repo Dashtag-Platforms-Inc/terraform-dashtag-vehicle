@@ -83,6 +83,9 @@ See [`examples/complete`](./examples/complete) for a runnable example.
 | <a name="input_model"></a> [model](#input\_model) | Vehicle model, e.g. Supra. | `string` | n/a | yes |
 | <a name="input_modifications"></a> [modifications](#input\_modifications) | Modifications to create, keyed by label. `null`/omitted creates none. | <pre>map(object({<br/>    name                 = string<br/>    description          = string<br/>    installed_date       = string<br/>    category             = optional(string)<br/>    installed_at_mileage = optional(number)<br/>    labor_cost           = optional(number)<br/>    parts_cost           = optional(number)<br/>  }))</pre> | `null` | no |
 | <a name="input_nickname"></a> [nickname](#input\_nickname) | Display nickname. | `string` | `null` | no |
+| <a name="input_sold"></a> [sold](#input\_sold) | Whether the vehicle has been sold. | `bool` | `null` | no |
+| <a name="input_sold_date"></a> [sold\_date](#input\_sold\_date) | Date the vehicle was sold (ISO 8601). | `string` | `null` | no |
+| <a name="input_sold_price"></a> [sold\_price](#input\_sold\_price) | Price the vehicle sold for. | `number` | `null` | no |
 | <a name="input_trim"></a> [trim](#input\_trim) | Trim level. | `string` | `null` | no |
 | <a name="input_vin"></a> [vin](#input\_vin) | Vehicle identification number. | `string` | `null` | no |
 | <a name="input_year"></a> [year](#input\_year) | Model year. | `number` | `null` | no |
